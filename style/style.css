@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.fundo{
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1;
+}
+
+.imagens{
+   width: 200px;
+   height: 250px;
+ 
+}
+.imagensdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 0 0 ;
+    margin: 1rem;
+    
+}
+.cabecalho{
+    background-color: darkred;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+   height: 50px;
+   
+}
+.paragrafo-cabecalho{
+font-family: 'roboto', sans-serif;
+font-size: 1,50rem;
+color: #f6f6f6;
+}
+.link-cabecalho{
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    color: black;
+    font-size: 1,30rem;
+    margin: 15px;
+}
+.link-cabecalho:hover{
+    color: dimgray;
+}
+.criticas{
+    background-color: darkred;
+    width: 25rem;
+    height: 30vh;
+    align-items: center;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #f6f6f6;
+}
+.conteudocriticas{
+    display:flex ;
+    align-items: center;
+    margin: 10px;
+}
+section{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+@media (max-width: 860px){
+    .imagensdiv{ 
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .conteudocriticas{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 433px){
+    .cabecalho{
+        margin: 0;
+        font-size: 14px;
+    }
+}
+@media (max-width: 393px){
+    .cabecalho{
+        margin: 0;
+        font-size: 13px;
+    }
+}
+@media (max-width: 375px){
+    .cabecalho{
+        margin: 0;
+        font-size: 11px;
+    }
+}
